@@ -1,0 +1,80 @@
+@font-face { /*Fonte baixada para os textos*/
+  font-family: 'Laura'; 
+  src: url('OldNewspaperTypes.ttf');
+  font-weight: normal; 
+  font-style: normal; 
+}
+h1{
+    color: #ffffff;
+}
+
+#flagImage {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+body {
+    font-family: Laura;
+    background-image: url("mapa.jpg");
+    background-size: cover;
+    display: flex;             
+    justify-content: center;      
+    align-items: center;          
+    height: 100vh;                /* Faz a altura do body ocupar toda a altura da janela */
+    margin: 0;                    /* Remove a margem padrão do body */
+    font-family: Arial, sans-serif; /* Define a fonte da página */
+}
+
+/* Contêiner principal */
+#tudo {
+    font-family: Laura;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro semitransparente */
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;                        /* O quadrado ocupará 90% da largura da tela */
+    max-width: 600px;                  /* Mas não ultrapassará 600px de largura */
+    text-align: center;                /* Alinha o texto dentro do quadrado ao centro */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    display: flex;                     /* Flexbox para alinhar o conteúdo */
+    flex-direction: column;            /* Organiza os elementos de forma vertical */
+    justify-content: center;           /* Alinha os itens verticalmente */
+    align-items: center;               /* Alinha os itens horizontalmente */
+    min-height: 400px;                 /* Define uma altura mínima para o quadrado */
+}
+
+#options{
+    display: flex;
+    justify-self: center;
+    gap: 10px;
+
+}
+#options button:hover {
+    background-color: #457fa0; 
+}
+
+#options button{
+    background-color: #7cbb7e; 
+    color: white;
+    border: none;
+    padding: 12px 24px; 
+    border-radius: 8px;
+    
+}
+#nextButton {
+    background-color:  #7cbb7e; 
+    color: white;
+    border: none;
+    padding: 12px 24px; 
+    border-radius: 8px;
+    text-align: center; 
+    width: 50%;
+}
+#nextButton:hover {
+    background-color: #457fa0; 
+}
